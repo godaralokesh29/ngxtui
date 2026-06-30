@@ -1,0 +1,42 @@
+{
+  "name": "nginxctl",
+  "version": "1.0.0",
+  "description": "A terminal UI utility for managing Nginx configurations",
+  "author": "Your Name",
+  "license": "MIT",
+  "main": "dist/cli.js",
+  "bin": {
+    "nginxctl": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build",
+    "start": "node dist/cli.js",
+    "dev": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "nginx",
+    "cli",
+    "terminal",
+    "devops"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/nginxctl.git"
+  },
+  "homepage": "https://github.com/yourusername/nginxctl#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/nginxctl/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "enquirer": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.6.3"
+  }
+}
